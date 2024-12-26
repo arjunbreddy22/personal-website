@@ -1,0 +1,27 @@
+/* For the rounded navbar */
+.rounded-navbar {
+    background-color: #1a1a2e; /* Dark navy blue */
+    color: white;
+    border-radius: 25px; /* Round navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; /* Center navbar */
+    width: 50%; 
+  }
+  
+  /* Navbar links */
+  .rounded-navbar .navbar-brand {
+    color: white;
+    text-decoration: none; /*remove default underline */
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .rounded-navbar .navbar-brand:hover {
+    color: #8e44ad; /* Purple hover color */
+  }
+ 
+  .rounded-navbar .navbar-brand:active {
+    color: blue; /* Purple hover color */
+  }
+ 
