@@ -1,0 +1,94 @@
+/* Style the container */
+.home-container {
+    display: flex; /* Enable Flexbox for layout */
+    justify-content: space-between; /* Space the text and image apart horizontally */
+    align-items: center; /* Vertically center the text and image */
+    height: 100vh; /* Make the container take up the full viewport height */
+    padding: 0 50px; /* Add horizontal padding for spacing */
+   
+    color: white; /* Text color */
+}
+  
+  /* Style the text content */
+.home-content {
+    max-width: 50%; /* Ensure the text doesn't stretch too wide */
+}
+  
+.home-content h1 {
+    font-size: 7rem;
+    margin-bottom: 10px;
+}
+  
+.home-content h2 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #e0f7fa;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+  
+  /* Style the image */
+.home-image img {
+    max-width: 550px; /* Limit the maximum size of the image */
+    margin-bottom:50px;
+    animation: float 3s ease-in-out infinite; /* Floating animation for a nice effect */
+}
+  
+  /* Floating animation */
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+  
+.highlight {
+    animation: fade-in 2s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+@keyframes fade-in {
+    to {
+      opacity: 1;
+    }
+}
+  
+  
+
+
+/* Mobile Layout (using @media) */
+@media screen and (max-width: 768px) {
+    .home-container {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .home-content {
+      max-width: 100%; /* Take full width */
+      margin-bottom: 20px;
+    }
+    .home-content h1 {
+        max-width: 100%; /* Take full width */
+        margin-bottom: 20px;
+        font-size: 5rem;
+    }
+  
+    .home-image img {
+      max-width: 80%; /* Scale image for smaller screens */
+    }
+}
+
+
+
+  
+  
+  
+  
+
+  
