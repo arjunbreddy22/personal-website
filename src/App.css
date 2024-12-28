@@ -1,4 +1,5 @@
 html, body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
     background: linear-gradient(135deg, #AFDDE5, #0FA4AF, #024950);
+    background-attachment: fixed;
 }
